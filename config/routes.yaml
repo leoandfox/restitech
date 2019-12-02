@@ -1,3 +1,9 @@
 index:
     path: /
     controller: App\Controller\DefaultController::index
+about:
+    path: /qui-sommes-nous
+    controller: App\Controller\AboutController::about
+vision:
+    path: /notre-vision
+    controller: App\Controller\VisionController::vision
