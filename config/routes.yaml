@@ -7,3 +7,9 @@ about:
 vision:
     path: /notre-vision
     controller: App\Controller\VisionController::vision
+strategie:
+    path: /strategie-manageriale
+    controller: App\Controller\StrategieController::strategie
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::contact

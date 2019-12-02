@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<section>
+        <div class="section-banner" style="background-image:url(images/about-mainimg.png);"></div>
+      </section>
+<section>
+    <div class="container">
+        <div class="title-box">
+            <div class="title-box-inner">
+                <h3 class="page-title">CONTACT</h3>
+                <ul class="breadcrumb">
+                    <li><a href="/">ACCUEIL</a></li>
+                    <li class="active"><a href="#">CONTACT</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-bg-color">
+        <div class="container">
+            <div class="contact-main">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="reach-us">
+                            <h3>COMMENT NOUS CONTACTER</h3>
+                            <div class="working-hours"> <i class="fa fa-clock-o"></i>
+                                <h4>HORAIRES</h4>
+                                <span>Du Lundi au Vendredi   9:00 H - 18:00 H</span> <span>WEEKEND   13:00 H - 18:00 H</span> </div>
+                            <div class="address-info"> <i class="fa fa-newspaper-o"></i>
+                                <h4>ADDRESS</h4>
+                                <span>En Face CAMTEL Bépanda, Douala, Cameroun </div>
+                            <div class="contact-info"> <i class="fa fa-phone"></i>
+                                <h4>CONTACTS</h4>
+                                <span>+237 695 71 75 09</span><br>
+                                <span>+237 695 206 496</span> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mail-us">
+                            <h3>ENVOYEZ-NOUS UN E-MAIL</h3>
+                        </div>
+                        <div class="main-contact-form">
+                            <div id="message"></div>
+                            <form id="maincontact_form" action="#" name="contactform" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control" id="contact_name" type="text" placeholder="VOTRE NOM*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <i class="fa fa-envelope-o"></i>
+                                            <input class="form-control" id="contact_email" type="email" placeholder="ADDRESS EMAIL*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <i class="fa fa-phone"></i>
+                                            <input class="form-control" id="contact_phone" type="text" placeholder="TELEPHONE">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <i class="fa fa-lightbulb-o"></i>
+                                            <input class="form-control" id="contact_subject" type="text" placeholder="SUJET">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <i class="fa fa-comment"></i>
+                                            <textarea class="form-control" id="contact_message" placeholder="MESSAGE"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button type="submit" id="submit" class="btn btn-primary">SEND MESSAGE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
