@@ -1,0 +1,676 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<header class="bg-img">
+    <div class="container">
+        <div class="upper-header">
+            <div class="logo"><a href="/"><img src="images/logo.png" alt="cardinal"></a></div>
+            <div class="contact-strip">
+                <div class="timing">
+                    <h5>HORAIRES:</h5>
+                    LUN-VEND: 9.00 H - 18.00 H
+                </div>
+                <div class="phone-no">
+                    <h5>APPELEZ-NOUS:</h5>
+                    <span class="text-secondary"> (+237) 243 70 99 99 / 695 20 64 96</span>
+                </div>
+            </div><!-- /contact-strip -->
+        </div><!-- /upper-header -->
+
+    </div>
+</header>
+<div class="container rel">
+    <nav id="navbar" class="navbar navbar-default collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">ACCUEIL</a></li>
+            <li><a href="#">A PROPOS DE NOUS</a></li>
+            <li><a aria-expanded="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">SERVICES</a>
+				<ul class="dropdown-menu" role="menu">
+					<!--<li class="active"><a href="home-2.html">Home 2</a></li>-->
+					<li><a href="#">Bâtiment & Travaux Public</a></li>
+					<li><a href="#">Télécommunication</a></li>
+					<li><a href="#">Électricité</a></li>
+					<li><a href="#">Fournitures diverses</a></li>
+				</ul>
+			</li>
+
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+<section>
+    <div class="home-banner home-banner-2 home-slider owl-carousel">
+
+        <div class="item">
+            <div class="sliderimg" style="background-image:url(images/background-02.jpeg);"></div>
+            <div class="banner-container">
+                <div class="banner">
+                    <div class="banner-content">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-10 col-lg-9 col-md-push-2  col-lg-push-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="home-2-banner-content">
+                                                <h4><span class="text-secondary">CAR</span> WASH. GLASSING. REPAIR</h4>
+                                                <h2>WE <span class="text-secondary">GIVE</span> BEST SERVICE</h2>
+                                                <p>Well, You have come to the right place for building websites.</p>
+                                            </div><!-- /home-2-banner-content -->
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="appointment-form-block">
+                                                <div class="form-heading">
+                                                    <h3>FAITES VOUS RAPPELER</h3>
+                                                    Disponible 24h/24-7j/7
+                                                </div><!-- /form-heading -->
+                                                <div class="appoint-form-2">
+                                                    <form action="#" name="appointmentform" method="post">
+                                                        <div class="form-inner-2">
+                                                            <div class="form-group">
+                                                                <input type="text" placeholder="Name"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" placeholder="Phone"
+                                                                    class="form-control">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <div class="select-box">
+                                                                    <select name="dropdown">
+                                                                        <option value="Volvo">Bâtiment & Travaux Public
+                                                                        </option>
+                                                                        <option value="3000">Télécommunication</option>
+                                                                        <option value="4000">Électricité</option>
+                                                                        <option value="4000">Fournitures diverses
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <textarea placeholder="Description" rows="3" cols="10"
+                                                                    class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <input type="submit" class="btn btn-secondary" value="CONFIRMER">
+                                                    </form>
+                                                </div><!-- /appoint-form-2 -->
+                                            </div><!-- /appointment-form-block -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- /banner-content -->
+                </div><!-- /banner -->
+            </div>
+        </div>
+        <div class="item">
+            <div class="sliderimg" style="background-image:url(images/background-01.jpeg);"></div>
+            <div class="banner-container">
+                <div class="banner">
+                    <div class="banner-content">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-10 col-lg-9 col-md-push-2  col-lg-push-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="home-2-banner-content">
+                                                <h4><span class="text-secondary">CAR</span> WASH. GLASSING. REPAIR</h4>
+                                                <h2>WE <span class="text-secondary">GIVE</span> BEST SERVICE</h2>
+                                                <p>Well, You have come to the right place for building websites.</p>
+                                            </div><!-- /home-2-banner-content -->
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="appointment-form-block">
+                                                <div class="form-heading">
+                                                    <h3>FAITES VOUS RAPPELER</h3>
+                                                    Disponible 24h/24-7j/7
+                                                </div><!-- /form-heading -->
+                                                <div class="appoint-form-2">
+                                                    <form action="#" name="appointmentform" method="post">
+                                                        <div class="form-inner-2">
+                                                            <div class="form-group">
+                                                                <input type="text" placeholder="Nom"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" placeholder="Téléphone"
+                                                                    class="form-control">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <div class="select-box">
+                                                                    <select name="dropdown">
+                                                                        <option value="Volvo">Bâtiment & Travaux Public
+                                                                        </option>
+                                                                        <option value="3000">Télécommunication</option>
+                                                                        <option value="4000">Électricité</option>
+                                                                        <option value="4000">Fournitures diverses
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <textarea placeholder="Description" rows="3" cols="10"
+                                                                    class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <input type="submit" class="btn btn-secondary" value="Envoyez">
+                                                    </form>
+                                                </div><!-- /appoint-form-2 -->
+                                            </div><!-- /appointment-form-block -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- /banner-content -->
+                </div><!-- /banner -->
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="title-box">
+            <div class="title-box-inner">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>Nos experts sont disponibles pour vous conseiller ! Contactez-nous c'est gratuit !</h4>
+                    </div>
+                    <div class="col-sm-4 text-right-md">
+                        <a href="#" class="btn btn-primary">Contactez-nous par email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-gray-gradient">
+    <div class="container">
+        <div class="section-heading">
+            <h2>QUE FAISONS-NOUS</h2>
+            <p>Resti-tech est une société de prestations des services situé à Bépanda face Direction CAMTEL
+            </p>
+        </div>
+        <div class="section-detail">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-box">
+                        <div class="service-img">
+                            <img src="images/service1-batiment.jpeg" class="img-responsive" alt="image">
+                            <div class="service-detail">
+                                <p> Étude et conception des plans - Réalisation des gros œuvres 
+                                </p>
+                                <a href="#" class="btn btn-secondary">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="service-name-2">
+                            <h5><a href="#">Bâtiment & Travaux Public
+                                    <span class="iconic"><i class="icon-home5"></i></span>
+                                </a></h5>
+                        </div>
+                    </div><!-- /service-box -->
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-box">
+                        <div class="service-img">
+                            <img src="images/service-2-telecommunication.jpeg" class="img-responsive" alt="image">
+                            <div class="service-detail">
+                                <p>Construction des sites GSM & CDMA clef en main
+                                </p>
+                                <a href="#" class="btn btn-secondary">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="service-name-2">
+                            <h5><a href="#">Télécommunication
+                                    <span class="iconic"><i class="icon-signal-cellular-4-bar"></i></span>
+                                </a></h5>
+                        </div>
+                    </div><!-- /service-box -->
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-box">
+                        <div class="service-img">
+                            <img src="images/service3-electricite.jpeg" class="img-responsive" alt="image">
+                            <div class="service-detail">
+                                <p>Installation industrielle & Domestique</p>
+                                <a href="#" class="btn btn-secondary">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="service-name-2">
+                            <h5><a href="#">Électricité
+                                    <span class="iconic"><i class="icon-power"></i></span>
+                                </a></h5>
+                        </div>
+                    </div><!-- /service-box -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>POURQUOI NOUS CHOISIR ?</h2>
+            <p>CINQ RAISONS FONDAMENTALES  POUR NOUS CHOISIR !
+            </p>
+        </div>
+        <div class="section-detail">
+            <div class="tab-section">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="tab">
+                            <ul class="nav nav-stacked">
+                                <li class="active">
+                                    <a href="#about" data-toggle="tab" aria-expanded="true">
+                                        <span class="curve"><i class="icon-loyalty"></i></span>
+                                        <span class="curve-text">L'ENGAGEMENT</span>
+                                    </a>
+                                </li>
+                                <li><a data-toggle="tab" href="#service"><span class="curve"><i
+                                                class="icon-verified-user"></i></span><span class="curve-text">
+                                                    Le Professionnalisme
+                                                </span></a></li>
+                                <li><a data-toggle="tab" href="#offers"><span class="curve"><i
+                                                class="icon-new-releases"></i></span><span
+                                            class="curve-text">La Flexibilité 
+                                        </span></a></li>
+                                <li><a data-toggle="tab" href="#dynamisme"><span class="curve"><i
+                                                class="icon-star-o"></i></span><span
+                                            class="curve-text">Le Dynamisme
+                                        </span></a></li>
+                                        <li><a data-toggle="tab" href="#delivery"><span class="curve"><i
+                                            class="icon-like"></i></span><span
+                                        class="curve-text">Le Respect des délais
+
+                                    </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div class="tab-content">
+                            <div id="about" class="tab-pane fade in active">
+                                <h4>L'ENGAGEMENT</h4>
+                                <p>Etant dans un monde où la technologie est devenu un élément incontournable, nous
+                                    constatons que l’Afrique s’est longtemps trouvé à la traîne des investissements et
+                                    capacités technologiques, bloquant par le fait même son avenir. Cette situation a
+                                    longtemps fait le lit d’une consommation et d’un entreprenariat extravertis.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-keyboard5"></i><span>Complete Computer<br />
+                                                    Diagnostics</span></li>
+                                            <li><i class="icon-gaspump"></i><span>Fuel System Services</span></li>
+                                            <li><i class="icon-road2"></i><span>Brake Repair Specialists</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-wrench3"></i><span>Complete Safety Analysis</span></li>
+                                            <li><i class="icon-steering-wheel"></i><span>Steering and Suspensions</span>
+                                            </li>
+                                            <li><i class="icon-flow-tree"></i><span>Mufflers and Exhaust Systems</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-secondary">En savoir plus</a>
+                            </div>
+                            <div id="service" class="tab-pane fade">
+                                <h4>Le Professionnalisme</h4>
+                                <p>Erspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beataesal
+                                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-keyboard5"></i><span>Complete Computer<br />
+                                                    Diagnostics</span></li>
+                                            <li><i class="icon-gaspump"></i><span>Fuel System Services</span></li>
+                                            <li><i class="icon-road2"></i><span>Brake Repair Specialists</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-wrench3"></i><span>Complete Safety Analysis</span></li>
+                                            <li><i class="icon-steering-wheel"></i><span>Steering and Suspensions</span>
+                                            </li>
+                                            <li><i class="icon-flow-tree"></i><span>Mufflers and Exhaust Systems</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                            <div id="offers" class="tab-pane fade">
+                                <h4>La Flexibilité</h4>
+                                <p>Erspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beataesal
+                                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-keyboard5"></i><span>Complete Computer<br />
+                                                    Diagnostics</span></li>
+                                            <li><i class="icon-gaspump"></i><span>Fuel System Services</span></li>
+                                            <li><i class="icon-road2"></i><span>Brake Repair Specialists</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-wrench3"></i><span>Complete Safety Analysis</span></li>
+                                            <li><i class="icon-steering-wheel"></i><span>Steering and Suspensions</span>
+                                            </li>
+                                            <li><i class="icon-flow-tree"></i><span>Mufflers and Exhaust Systems</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                            <div id="dynamisme" class="tab-pane fade">
+                                <h4>Le Dynamisme</h4>
+                                <p>Erspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beataesal
+                                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-keyboard5"></i><span>Complete Computer<br />
+                                                    Diagnostics</span></li>
+                                            <li><i class="icon-gaspump"></i><span>Fuel System Services</span></li>
+                                            <li><i class="icon-road2"></i><span>Brake Repair Specialists</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-wrench3"></i><span>Complete Safety Analysis</span></li>
+                                            <li><i class="icon-steering-wheel"></i><span>Steering and Suspensions</span>
+                                            </li>
+                                            <li><i class="icon-flow-tree"></i><span>Mufflers and Exhaust Systems</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                            <div id="delivery" class="tab-pane fade">
+                                <h4>Le Respect des délais</h4>
+                                <p>Erspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beataesal
+                                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-keyboard5"></i><span>Complete Computer<br />
+                                                    Diagnostics</span></li>
+                                            <li><i class="icon-gaspump"></i><span>Fuel System Services</span></li>
+                                            <li><i class="icon-road2"></i><span>Brake Repair Specialists</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="services-name">
+                                            <li><i class="icon-wrench3"></i><span>Complete Safety Analysis</span></li>
+                                            <li><i class="icon-steering-wheel"></i><span>Steering and Suspensions</span>
+                                            </li>
+                                            <li><i class="icon-flow-tree"></i><span>Mufflers and Exhaust Systems</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-1">
+                        <div class="offer-img"> <img src="images/service-man-2.png" class="img-responsive" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /tab-section -->
+
+        </div>
+    </div>
+</section>
+<section class="bg-gallery clearfix">
+    <div class="container">
+        <div class="section-heading">
+            <h2>GALLERIE CHANTIERS</h2>
+            <p>Quelques images de notre équipe en pleine action</p>
+        </div>
+    </div>
+    <div id="aluminium" class="section-detail no-padding-bottom">
+        <div class="gallery-container">
+            <div class="gallery car">
+                <div class="gallery-hovered">
+                    <div class="gallery-img">
+                        <img src="images/gallerie/4.jpg" class="img-responsive" alt="image">
+                        <a href="#aluminium" class="gallery-link"></a>
+                        <div class="image-hover">
+                            <a href="images/gallerie/aluminium_staf/4.jpg" class="gallery-search"></a>
+                            <a href="images/gallerie/aluminium_staf/2.jpg"></a>
+                            <a href="images/gallerie/aluminium_staf/3.jpg"></a>
+                            <a href="images/gallerie/aluminium_staf/5.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="working-name">
+                    <h5>Aluminium et Staff</h5>
+                    <p>Travaux</p>
+                </div>
+            </div>
+            <div id="cloison" class="gallery car polishing">
+                <div class="gallery-hovered">
+                    <div class="gallery-img">
+                        <img src="images/gallerie/cloison_bureau/1.jpg" class="img-responsive" alt="image">
+                        <a href="#cloison" class="gallery-link"></a>
+                        <div class="image-hover">
+                            <a href="images/gallerie/cloison_bureau/1.jpg" class="gallery-search"></a>
+                            <a href="images/gallerie/cloison_bureau/2.jpg"></a>
+                            <a href="images/gallerie/cloison_bureau/3.jpg"></a>
+                            <a href="images/gallerie/cloison_bureau/4.jpg"></a>
+                            <a href="images/gallerie/cloison_bureau/5.jpg"></a>
+                            <a href="images/gallerie/cloison_bureau/6.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="working-name">
+                    <h5>Cloison de bureau</h5>
+                    <p>Travaux</p>
+                </div>
+            </div>
+            <div id="rehabilitation-avant" class="gallery glassing">
+                <div class="gallery-hovered">
+                    <div class="gallery-img">
+                        <img src="images/gallerie/rehabilitation/avant/3.jpg" class="img-responsive" alt="image">
+                        <a href="#rehabilitation-avant" class="gallery-link"></a>
+                        <div class="image-hover">
+                            <a href="images/gallerie/rehabilitation/avant/3.jpg" class="gallery-search"></a>
+                            <a href="images/gallerie/rehabilitation/avant/2.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/avant/4.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/avant/5.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="working-name">
+                    <h5>Réhabilitation</h5>
+                    <p>Avant</p>
+                </div>
+            </div>
+            <div id="rehabilitation-pendant" class="gallery car">
+                <div class="gallery-hovered">
+                    <div class="gallery-img">
+                        <img src="images/gallerie/rehabilitation/pendant/1.jpg" class="img-responsive" alt="image">
+                        <a href="#rehabilitation-pendant" class="gallery-link"></a>
+                        <div class="image-hover">
+                            <a href="images/gallerie/rehabilitation/pendant/1.jpg" class="gallery-search"></a>
+                            <a href="images/gallerie/rehabilitation/pendant/2.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/pendant/3.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/pendant/4.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/pendant/5.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="working-name">
+                    <h5>Réhabilitation</h5>
+                    <p>Pendant</p>
+                </div>
+            </div>
+            <div id="rehabilitation-apres" class="gallery polishing">
+                <div class="gallery-hovered">
+                    <div class="gallery-img">
+                        <img src="images/gallerie/rehabilitation/apres/2.jpg" class="img-responsive" alt="image">
+                        <a href="#rehabilitation-apres" class="gallery-link"></a>
+                        <div class="image-hover">
+                            <a href="images/gallerie/rehabilitation/apres/2.jpg" class="gallery-search"></a>
+                            <a href="images/gallerie/rehabilitation/apres/5.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/apres/3.jpg"></a>
+                            <a href="images/gallerie/rehabilitation/apres/4.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="working-name">
+                    <h5>Réhabilitation</h5>
+                    <p>Après</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="partners">
+            <div class="section-heading">
+                <h2>PARTENAIRES</h2>
+            </div>
+            <div class="section-detail">
+                <div class="brands-section">
+                    <div class="brands-controls">
+                        <span class="caro-prev caro-prev-brand"></span>
+                        <span class="caro-next caro-next-brand"></span>
+                    </div>
+
+                    <div class="brand-carousel owl-carousel">
+                        <div class="item">
+                            <a href="#" class="brand-image"><img src="images/brand-01.png" alt="image"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="brand-image"><img src="images/brand-06.png" alt="image"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="brand-image"><img src="images/brand-03.png" alt="image"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="brand-image"><img src="images/brand-04.png" alt="image"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="brand-image"><img src="images/brand-05.png" alt="image"></a>
+                        </div>
+                   
+                    </div>
+                </div>
+            </div><!-- /section-detail -->
+        </div>
+    </div>
+</section>
+<footer>
+    <section class="bg-footer">
+        <div class="container">
+            <div class="area">
+                <div class="row">
+                 
+                    <div class="col-md-4">
+                        <div class="location">
+                            <i class="icon-streetsign"></i>
+                            <h5>ZONE D'INTERVENTION</h5>
+                            <p class="location-name">CAMEROUN</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="phone">
+                            <i class="icon-clock-o"></i>
+                            <h5>SERVICES DISPONIBLES 24h/24</h5>
+                            <p class="location-name"> (+237) 243 70 99 99 / 695 20 64 96</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widgets">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about">
+                            <a href="#"><img src="images/logo-2.png" class="img-responsive" alt="image"></a>
+                            <p>Michael Knight a young loner on a crusade to champion<br />
+                                the cause of the innocent. The helpless. The powerless<br />
+                                in a world of criminals who operate above the law. </p>
+                        </div>
+                        <div class="social-media">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-timing">
+                            <h5>HORAIRES</h5>
+                            <ul>
+                                <li><a href="#">WEEKEND<span> 13:00 H - 18:00 H</span></a></li>
+                                <li><a href="#">LUNDI<span> 08:00 H - 18:00 H</span></a></li>
+                                <li><a href="#">MARDI<span> 08:00 H - 18:00 H</span></a></li>
+                                <li><a href="#">MERCREDI<span> 08:00 H - 18:00 H</span></a></li>
+                                <li><a href="#">JEUDO<span> 08:00 H - 18:00 H</span></a></li>
+                                <li><a href="#">VENDREDI<span> 08:00 H - 18:00 H</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-us">
+                            <h5>CONTACT US</h5>
+                            <div id="message1"></div>
+                            <form id="comments_form" action="#" class="row" name="contactform" method="post">
+                                <input type="text" id="contact_name1" placeholder="NOM" />
+                                <input type="text" id="contact_email1" placeholder="EMAIL" />
+                                <textarea id="contact_message1" placeholder="MESSAGE" rows="3" cols="10"></textarea>
+                                <button type="submit" id="" class="btn btn-secondary">CONFIRMER</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-lowerfooter">
+        <div class="lower-footer">
+            <div class="container">
+                <ul class="bottom-links">
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">A PROPOS DE NOUS</a></li>
+                    <li><a href="#">Contactez Nous</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
