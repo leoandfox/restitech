@@ -31,37 +31,7 @@
                                                     Disponible 24h/24-7j/7
                                                 </div><!-- /form-heading -->
                                                 <div class="appoint-form-2">
-                                                    <form action="#" name="appointmentform" method="post">
-                                                        <div class="form-inner-2">
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Name"
-                                                                    class="form-control">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Téléphone"
-                                                                    class="form-control">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <div class="select-box">
-                                                                    <select name="dropdown">
-                                                                        <option value="Volvo">Bâtiment & Travaux Public
-                                                                        </option>
-                                                                        <option value="3000">Télécommunication</option>
-                                                                        <option value="4000">Électricité</option>
-                                                                        <option value="4000">Fournitures diverses
-                                                                        </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea placeholder="Description" rows="3" cols="10"
-                                                                    class="form-control"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" class="btn btn-secondary"
-                                                            value="CONFIRMER">
-                                                    </form>
+                                                        {{ block('formAskRecall') }}
                                                 </div><!-- /appoint-form-2 -->
                                             </div><!-- /appointment-form-block -->
                                         </div>
@@ -101,36 +71,7 @@
                                                     Disponible 24h/24-7j/7
                                                 </div><!-- /form-heading -->
                                                 <div class="appoint-form-2">
-                                                    <form action="#" name="appointmentform" method="post">
-                                                        <div class="form-inner-2">
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Nom"
-                                                                    class="form-control">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Téléphone"
-                                                                    class="form-control">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <div class="select-box">
-                                                                    <select name="dropdown">
-                                                                        <option value="Volvo">Bâtiment & Travaux Public
-                                                                        </option>
-                                                                        <option value="3000">Télécommunication</option>
-                                                                        <option value="4000">Électricité</option>
-                                                                        <option value="4000">Fournitures diverses
-                                                                        </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea placeholder="Description" rows="3" cols="10"
-                                                                    class="form-control"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" class="btn btn-secondary" value="Envoyez">
-                                                    </form>
+                                                        {{ block('formAskRecall') }}
                                                 </div><!-- /appoint-form-2 -->
                                             </div><!-- /appointment-form-block -->
                                         </div>
@@ -165,36 +106,7 @@
                                                     Disponible 24h/24-7j/7
                                                 </div><!-- /form-heading -->
                                                 <div class="appoint-form-2">
-                                                    <form action="#" name="appointmentform" method="post">
-                                                        <div class="form-inner-2">
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Nom"
-                                                                    class="form-control">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Téléphone"
-                                                                    class="form-control">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <div class="select-box">
-                                                                    <select name="dropdown">
-                                                                        <option value="Volvo">Bâtiment & Travaux Public
-                                                                        </option>
-                                                                        <option value="3000">Télécommunication</option>
-                                                                        <option value="4000">Électricité</option>
-                                                                        <option value="4000">Fournitures diverses
-                                                                        </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea placeholder="Description" rows="3" cols="10"
-                                                                    class="form-control"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" class="btn btn-secondary" value="Envoyez">
-                                                    </form>
+                                                        {{ block('formAskRecall') }}
                                                 </div><!-- /appoint-form-2 -->
                                             </div><!-- /appointment-form-block -->
                                         </div>
@@ -229,36 +141,40 @@
                                                     Disponible 24h/24-7j/7
                                                 </div><!-- /form-heading -->
                                                 <div class="appoint-form-2">
-                                                    <form action="#" name="appointmentform" method="post">
-                                                        <div class="form-inner-2">
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Nom"
-                                                                    class="form-control">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Téléphone"
-                                                                    class="form-control">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <div class="select-box">
-                                                                    <select name="dropdown">
-                                                                        <option value="Volvo">Bâtiment & Travaux Public
-                                                                        </option>
-                                                                        <option value="3000">Télécommunication</option>
-                                                                        <option value="4000">Électricité</option>
-                                                                        <option value="4000">Fournitures diverses
-                                                                        </option>
-                                                                    </select>
+                                                      
+                                                        {% block formAskRecall %}
+                                                        <form class="askrecall" action="#" name="appointmentform" method="post">
+                                                                <div class="form-inner-2">
+                                                                    <div class="form-group">
+                                                                        <input type="text" placeholder="Nom"
+                                                                            class="form-control form-name">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="text" placeholder="Téléphone"
+                                                                            class="form-control form-phone">
+                                                                    </div>
+        
+                                                                    <div class="form-group">
+                                                                        <div class="select-box">
+                                                                            <select class="form-category" name="dropdown">
+                                                                                <option value="Bâtiment & Travaux Public">Bâtiment & Travaux Public
+                                                                                </option>
+                                                                                <option value="Télécommunication">Télécommunication</option>
+                                                                                <option value="Électricité">Électricité</option>
+                                                                                <option value="Fournitures diverses">Fournitures diverses
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <textarea placeholder="Description" rows="3" cols="10"
+                                                                            class="form-control form-description"></textarea>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea placeholder="Description" rows="3" cols="10"
-                                                                    class="form-control"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" class="btn btn-secondary" value="Envoyez">
-                                                    </form>
+                                                                <input type="submit" class="btn btn-secondary" value="Envoyez">
+                                                            </form>
+                                                        {% endblock %}
+                                                    
                                                 </div><!-- /appoint-form-2 -->
                                             </div><!-- /appointment-form-block -->
                                         </div>
@@ -293,36 +209,7 @@
                                                     Disponible 24h/24-7j/7
                                                 </div><!-- /form-heading -->
                                                 <div class="appoint-form-2">
-                                                    <form action="#" name="appointmentform" method="post">
-                                                        <div class="form-inner-2">
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Nom"
-                                                                    class="form-control">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="text" placeholder="Téléphone"
-                                                                    class="form-control">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <div class="select-box">
-                                                                    <select name="dropdown">
-                                                                        <option value="Volvo">Bâtiment & Travaux Public
-                                                                        </option>
-                                                                        <option value="3000">Télécommunication</option>
-                                                                        <option value="4000">Électricité</option>
-                                                                        <option value="4000">Fournitures diverses
-                                                                        </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea placeholder="Description" rows="3" cols="10"
-                                                                    class="form-control"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" class="btn btn-secondary" value="Envoyez">
-                                                    </form>
+                                                        {{ block('formAskRecall') }}
                                                 </div><!-- /appoint-form-2 -->
                                             </div><!-- /appointment-form-block -->
                                         </div>
