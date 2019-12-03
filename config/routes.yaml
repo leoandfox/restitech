@@ -13,3 +13,6 @@ strategie:
 contact:
     path: /contact
     controller: App\Controller\ContactController::contact
+motpdg:
+    path: /mot-du-pdg
+    controller: App\Controller\MotPdgController::motpdg
