@@ -16,3 +16,12 @@ contact:
 motpdg:
     path: /mot-du-pdg
     controller: App\Controller\MotPdgController::motpdg
+service-telecommunication:
+    path: /services/telecommunication
+    controller: App\Controller\ServiceController::telecommunication
+service-batiment:
+    path: /services/batiment-et-travaux-publics
+    controller: App\Controller\ServiceController::batiment
+service-electricite:
+    path: /services/electricite
+    controller: App\Controller\ServiceController::electricite

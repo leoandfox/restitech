@@ -20,7 +20,7 @@
     <header class="bg-img">
         <div class="container">
             <div class="upper-header">
-                <div class="logo"><a href="/"><img src="images/logo-restitech-300.png" alt="Logo Restitech Sarl"></a>
+                <div class="logo"><a href="/"><img src="{{ asset('images/logo-restitech-300.png') }}" alt="Logo Restitech Sarl"></a>
                 </div>
                 <div class="contact-strip">
                     <div class="phone-no">
@@ -43,10 +43,10 @@
                         href="#">SERVICES</a>
                     <ul class="dropdown-menu" role="menu">
                         <!--<li class="active"><a href="home-2.html">Home 2</a></li>-->
-                        <li><a href="#">Bâtiment & Travaux Public</a></li>
-                        <li><a href="#">Télécommunication</a></li>
-                        <li><a href="#">Électricité</a></li>
-                        <li><a href="#">Fournitures diverses</a></li>
+                        <li><a href="/services/telecommunication">Télécommunication</a></li>
+                        <li><a href="/services/batiment-et-travaux-publics">Bâtiment & Travaux Public</a></li>
+                        <li><a href="/services/electricite">Électricité</a></li>
+                       <!-- <li><a href="#">Fournitures diverses</a></li>-->
                     </ul>
                 </li>
                 <li class="{% if app.request.attributes.get('_route') == 'motpdg' %}active{% endif %}"><a href="/mot-du-pdg">Mot du PDG</a></li>
