@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "803912537d34378bb260a0d2052d39c3",
+    "content-hash": "9b82d37eb0d7bc2ebcdb09e2d0f779c3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2858,16 +2858,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "e96eea999cf185960b179e96f04b9fa2ac2195d0"
+                "reference": "62afdbdd7d27e65ec712759b6718ca0164fe74ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/e96eea999cf185960b179e96f04b9fa2ac2195d0",
-                "reference": "e96eea999cf185960b179e96f04b9fa2ac2195d0",
+                "url": "https://api.github.com/repos/symfony/form/zipball/62afdbdd7d27e65ec712759b6718ca0164fe74ed",
+                "reference": "62afdbdd7d27e65ec712759b6718ca0164fe74ed",
                 "shasum": ""
             },
             "require": {
@@ -2938,7 +2938,7 @@
             ],
             "description": "Symfony Form Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-21T07:02:40+00:00"
+            "time": "2019-12-01T09:14:07+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -3483,16 +3483,16 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "43a7b522213a5d39267269f180fe00a235d17ae2"
+                "reference": "f7478f49f27d8c55582dcb482f1ca8a90e0dfa30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/43a7b522213a5d39267269f180fe00a235d17ae2",
-                "reference": "43a7b522213a5d39267269f180fe00a235d17ae2",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/f7478f49f27d8c55582dcb482f1ca8a90e0dfa30",
+                "reference": "f7478f49f27d8c55582dcb482f1ca8a90e0dfa30",
                 "shasum": ""
             },
             "require": {
@@ -3546,7 +3546,7 @@
             ],
             "description": "Symfony Mailer Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-12-01T08:48:26+00:00"
         },
         {
             "name": "symfony/mime",
@@ -5361,16 +5361,16 @@
         },
         {
             "name": "symfony/twig-bundle",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bundle.git",
-                "reference": "9f11f898f7fc2b5f35c1977a926fcab339e6bb8b"
+                "reference": "0294caa1eebd0dd89c305f35181fc113a25fe1f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/9f11f898f7fc2b5f35c1977a926fcab339e6bb8b",
-                "reference": "9f11f898f7fc2b5f35c1977a926fcab339e6bb8b",
+                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/0294caa1eebd0dd89c305f35181fc113a25fe1f9",
+                "reference": "0294caa1eebd0dd89c305f35181fc113a25fe1f9",
                 "shasum": ""
             },
             "require": {
@@ -5432,7 +5432,7 @@
             ],
             "description": "Symfony TwigBundle",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-11-30T14:12:50+00:00"
         },
         {
             "name": "symfony/twig-pack",
@@ -5464,16 +5464,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "4c32fbacd1652271be449be4ebc57eb5c4c8793b"
+                "reference": "09af8612c2724960b4a604b65ddfe0ec352091b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/4c32fbacd1652271be449be4ebc57eb5c4c8793b",
-                "reference": "4c32fbacd1652271be449be4ebc57eb5c4c8793b",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/09af8612c2724960b4a604b65ddfe0ec352091b6",
+                "reference": "09af8612c2724960b4a604b65ddfe0ec352091b6",
                 "shasum": ""
             },
             "require": {
@@ -5552,7 +5552,7 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-11-30T14:12:50+00:00"
         },
         {
             "name": "symfony/var-dumper",

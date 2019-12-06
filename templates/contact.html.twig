@@ -43,49 +43,83 @@
                         </div>
                         <div class="main-contact-form">
                             <div id="message"></div>
-                            <form id="maincontact_form" action="#" name="contactform" method="post">
+                            {{ form_start(form) }}
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <i class="fa fa-user"></i>
-                                            <input class="form-control" id="contact_name" type="text" placeholder="VOTRE NOM*">
+                                            {{ form_widget(form.lastname, {'attr': {'class': 'form-control'}}) }}
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <i class="fa fa-envelope-o"></i>
-                                            <input class="form-control" id="contact_email" type="email" placeholder="ADDRESS EMAIL*">
+                                            {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <i class="fa fa-phone"></i>
-                                            <input class="form-control" id="contact_phone" type="text" placeholder="TELEPHONE">
+                                            {{ form_widget(form.telephone, {'attr': {'class': 'form-control'}}) }}
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <i class="fa fa-lightbulb-o"></i>
-                                            <input class="form-control" id="contact_subject" type="text" placeholder="SUJET">
+                                            {{ form_widget(form.subject, {'attr': {'class': 'form-control'}}) }}
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <i class="fa fa-comment"></i>
-                                            <textarea class="form-control" id="contact_message" placeholder="MESSAGE"></textarea>
+                                            {{ form_widget(form.content, {'attr': {'class': 'form-control'}}) }}
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <button type="submit" id="submit" class="btn btn-primary">ENVOYEZ</button>
+                                            {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            {{ form_end(form) }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+{% endblock %}
+{% block javascripts %}
+
+<script>
+    /*var token = "a2602171-ee9f-405d-9584-15eb1e6ccba8";
+        $("#maincontact_form").submit(function (e) {
+            e.preventDefault();
+            alert("Hello Smtp Js, ask recall");
+            var name =$(this).find("#contact_name").val();
+            var email =$(this).find("#contact_email").val();
+            var subject =$(this).find("#contact_subject").val();
+            var phone =$(this).find("#contact_phone").val();
+            var message =$(this).find("#contact_message").val();
+            alert("nom : "+name);
+            var contentMessage = "Nom de l'émetteur : " + name + " | Téléphone : " + phone + "| Email : " + email + " | Message:" +
+                message;
+            Email.send({
+                SecureToken: token,
+                To: 'website@restitechsarl.com',
+                From: "website@restitechsarl.com",
+                Subject: "Vous avez reçu un message depuis votre site : "+subject,
+                Body: contentMessage
+            }).then(
+                () => {
+                    $("#contact_name").val("");
+                    $("#contact_email").val("");
+                    $("#contact_subject").val("");
+                    $("#contact_phone").val("");
+                    $("#contact_message").val("");
+                    console.log("message envoyé");
+                }
+            );
+        })*/
+</script>
 {% endblock %}

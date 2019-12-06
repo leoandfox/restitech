@@ -83,8 +83,66 @@ jQuery(function($){
 
 
 jQuery(document).ready(function($){
+	var token = "a2602171-ee9f-405d-9584-15eb1e6ccba8";
+	$('#maincontact_form').on('submit', function (e) {
+		e.preventDefault();
+		console.log("maincontact_form - Hello Smtp Js, ask recall");
+		var name = $(this).find("#contact_name").val();
+		var email = $(this).find("#contact_email").val();
+		var subject = $(this).find("#contact_subject").val();
+		var phone = $(this).find("#contact_phone").val();
+		var message = $(this).find("#contact_message").val();
+		console.log("nom : " + name);
+		var contentMessage = "Nom de l'émetteur : " + name + " | Téléphone : " + phone + "| Email : " + email + " | Message:" +
+			message;
+		Email.send({
+			SecureToken: token,
+			To: 'info@restitechsarl.com',
+			From: "website@restitechsarl.com",
+			Subject: "Vous avez reçu un message depuis votre site : " + subject,
+			Body: contentMessage
+		}).then(
+			() => {
+				$("#contact_name").val("");
+				$("#contact_email").val("");
+				$("#contact_subject").val("");
+				$("#contact_phone").val("");
+				$("#contact_message").val("");
+				console.log("message envoyé");
+			}
+		);
 
+	});
 
+	/*$('#comments_form').on('submit', function (e) {
+		//e.preventDefault();
+		console.log("comments_form - Hello Smtp Js, ask recall");
+		var name = $(this).find("#name").val();
+		console.log("nom : " + name);
+		var phone = $(this).find("#email").val();
+		var message = $(this).find("#message").val();
+		var contentMessage = "Nom de l'émetteur : " + name + " | Email : " + phone + " | Message:" +
+			message;
+		Email.send({
+			SecureToken: token,
+			To: 'info@restitechsarl.com',
+			From: "website@restitechsarl.com",
+			Subject: "Vous avez reçu un message depuis votre site : " + name,
+			Body: contentMessage
+		}).then(
+			//message => alert(message)
+			() => {
+				$("#name").val("");
+				$("#email").val("");
+				$("#message").val("");
+				console.log("message envoyé");
+			}
+
+		);
+
+	});*/
+
+/*
 	$('#maincontact_form').on('submit', function(){
 
 		var action = $(this).attr('action');
@@ -151,7 +209,7 @@ jQuery(document).ready(function($){
 
 		return false;
 
-	});
+	});*/
 
 	$('#fill_form').on('submit', function(e){
 		return false;
