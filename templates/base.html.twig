@@ -38,6 +38,8 @@
             <ul class="nav navbar-nav">
                 <li class="{% if app.request.attributes.get('_route') == 'index' %}active{% endif %}"><a
                         href="/">ACCUEIL</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'motpdg' %}active{% endif %}"><a
+                            href="/mot-du-pdg">Mot du PDG</a></li>
                 <li class="{% if app.request.attributes.get('_route') == 'about' %}active{% endif %}"><a
                         href="/qui-sommes-nous">Qui sommes-nous ?</a></li>
                 <li class="{% if app.request.attributes.get('_route') == 'vision' %}active{% endif %}"><a
@@ -54,8 +56,7 @@
                         <!-- <li><a href="#">Fournitures diverses</a></li>-->
                     </ul>
                 </li>
-                <li class="{% if app.request.attributes.get('_route') == 'motpdg' %}active{% endif %}"><a
-                        href="/mot-du-pdg">Mot du PDG</a></li>
+                
                 <li class="{% if app.request.attributes.get('_route') == 'contact' %}active{% endif %}"><a
                         href="/contact">CONTACT</a></li>
             </ul>
@@ -91,7 +92,7 @@
                                 <a href="/"><img src="{{ asset('images/logo-2.png') }}" class="img-responsive"
                                         alt="image"></a>
                                 <p>Décembre 2011 sous le sigle PRIME Sarl et devenu <br />
-                                    Restitution-Technologie en abrégé Resti-tech Sarl en 2014 <br /> </p>
+                                    Restitution Technology en abrégé Resti-tech Sarl en 2014 <br /> </p>
                             </div>
                             <div class="social-media">
                                 <ul>
@@ -110,7 +111,7 @@
                             <div class="work-timing">
                                 <h5>HORAIRES</h5>
                                 <ul>
-                                    <li><a href="#">WEEKEND<span> 13:00 H - 18:00 H</span></a></li>
+                                    <li><a href="#">WEEKEND<span> 9:00 H - 13:00 H</span></a></li>
                                     <li><a href="#">LUNDI<span> 08:00 H - 18:00 H</span></a></li>
                                     <li><a href="#">MARDI<span> 08:00 H - 18:00 H</span></a></li>
                                     <li><a href="#">MERCREDI<span> 08:00 H - 18:00 H</span></a></li>
