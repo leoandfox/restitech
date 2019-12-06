@@ -18,6 +18,7 @@ class ContactController extends AbstractController{
     function contact(Request $request,MailerInterface $mailer)
     {
         $message = new Message();
+        $statusMessage="";
         $form = $this->createFormBuilder()
              ->add('lastname', TextType::class, array('required' => true,'attr' => array('placeholder' => 'Nom(s)*')))
              ->add('subject', TextType::class, array( 'required' => true,'attr' => array('placeholder' => 'Sujet*')))
@@ -53,11 +54,22 @@ class ContactController extends AbstractController{
                 ])
              ;
              $mailer->send($mailToSend);
-             return $this->redirectToRoute('contact');
+             if($mailer)
+             {
+                 $statusMessage="Votre message a bien été envoyé";
+             }else{
+                $statusMessage="Votre message n'a pas pu être envoyé";
+             }
+             return $this->render('contact.html.twig', [
+                'controller_name' => 'ContactController',
+                'form' => $form->createView(),
+                'messageStatus'=> $statusMessage,
+            ]);
          }
          return $this->render('contact.html.twig', [
              'controller_name' => 'ContactController',
              'form' => $form->createView(),
+             'messageStatus'=> $statusMessage,
          ]);
         //return $this->render('');
     }
