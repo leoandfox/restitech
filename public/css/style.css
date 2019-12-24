@@ -45,6 +45,9 @@
 
 
 /*************** General Styling **************/
+body{
+	font-size: 18px !important;
+}
 
 /*** pseudo elements ***/
 .banner:before, .banner:after,
@@ -510,7 +513,7 @@ section {
 /*** service boxes ***/
 
 .section-heading p {
-	font-size: 15px;
+	font-size: 18px;
 }
 .service-box {
 	margin-bottom: 30px;
